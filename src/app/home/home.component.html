@@ -1,60 +1,36 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
- <meta charset="UTF-8">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <title>Navbar</title>
- <style>
-    * {
-      padding: 0;
-      margin: 0;
-      box-sizing: border-box;
-    }
+<!-- <app-navbar></app-navbar> -->
+<div class="splash-screen2">
 
-    body {
-      font-family: Arial, sans-serif;
-    }
+  <img style="margin:0 auto" height="500px" src="assets/img/1.png" alt="My App Logo">
+  <div class="loading-spinner"></div>
 
-    nav {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      background-color: #333;
-      padding: 1rem;
-    }
+</div>
+<div class="splash-screen" style="text-align: center;">angular project educational for kids</div>
 
-    nav ul {
-      display: flex;
-      list-style: none;
-    }
+<body [hidden]="a">
+    <div class="navbar">
+        <ul>
+            <li><a routerLink="/about"><img width="25" src="assets/img/2.svg" alt=""></a></li>
+            <li><a routerLink="/services">game kids</a></li>
+            <li><a routerLink="/contact"><img width="25" src="assets/img/menu.svg" alt=""></a></li>
+        </ul>
+    </div>
+    
+    <h1 align="center">kids</h1>
 
-    nav ul li a {
-      color: white;
-      text-decoration: none;
-      padding: 0.5rem 1rem;
-    }
+  <div class="grid-container">
+      <div class="grid-item">
+          <img src="assets/img/2.svg" alt="Image 1">
+      </div>
+      <div class="grid-item">
+          <img src="assets/img/1.png" alt="Image 2">
+      </div>
+      <div class="grid-item">
+          <img src="assets/img/2.png" alt="Image 3">
+      </div>
+      <div class="grid-item">
+          <img src="assets/img/1.svg" alt="Image 4">
+      </div>
 
-    nav ul li a:hover {
-      background-color: #555;
-      color: white;
-    }
-
-    @media screen and (max-width: 768px) {
-      nav ul {
-        display: none;
-      }
-    }
- </style>
-</head>
-<body>
- <nav>
-    <h1 style="color: rgb(255, 255, 255);">Logo</h1>
-    <ul>
-      <li><a href="#">Home</a></li>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Services</a></li>
-      <li><a href="/about">Contact</a></li>
-    </ul>
- </nav>
+  </div>
 </body>
-</html>

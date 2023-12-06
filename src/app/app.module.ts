@@ -5,7 +5,8 @@ import { FormsModule } from '@angular/forms';
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { Routes } from '@angular/router'; // Correct import
-import { RouterModule } from '@angular/router'; // Add this import
+import { RouterModule } from '@angular/router';
+import { NavbarComponent } from './navbar/navbar.component'; // Add this import
 const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'about', component: AboutComponent },
@@ -16,6 +17,7 @@ const routes: Routes = [
     AppComponent,
     AboutComponent,
     HomeComponent,
+    NavbarComponent,
   ],
   imports: [
     BrowserModule,
